@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class='hamburger-menu'>
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#symptoms" class="nav-link">Symptoms</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#protection" class="nav-link">Protection</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#global-info" class="nav-link">Global</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#poland-info" class="nav-link">Poland</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <h1>COVID-19 Live statistics from the World</i></h1>
+            <h2>Stay updated everyday.</h2>
+        </header>
+            <form class="find-country"action="">
+            <input id='input-value' type="text" placeholder="Country">
+            <button type="submit">Search</button>
+            </form> 
+        <div class="container-counter">
+            <div class="container-inner">
+                <i class="fas fa-viruses"></i>
+                <div class="counter" id='confirmed'></div>
+                <p>Confirmed cases</p>
+            </div>
+            <div class="container-inner">
+                <i class="fas fa-head-side-virus"></i>
+                <div class="counter" id='deaths'></div>
+                <p>Deaths</p>
+            </div>
+            <div class="container-inner">
+                <i class="fas fa-star-of-life"></i>
+                <div class="counter" id='recovered'></div>
+                <p>Recovered</p>
+            </div>
+        </div>
+        <section class='intro'>
+            <div class='intro-p'>
+                <p>
+                    COVID-19 - acute respiratory infection caused by SARS-CoV-2 infection. 
+                    It was first recognized and described in November 2019 in Central China (Wuhan City, Hubei Province)
+                    during a series of cases that initiated the pandemic of this disease.
+                    The WHO position based on data from March 3, 2020 speaks of a mortality rate of 3.4%. On January 30, 2020,
+                    WHO announced an international public health emergency as a result of the spreading COVID-19 epidemic.
+                    On March 11, 2020 WHO recognized the COVID-19 series from December 2019 as a pandemic.
+                </p>
+            </div>
+            <div id="symptoms">
+                <h2>Symptoms</h2>
+                <div class='table-container'>
+                    <table>
+                        <tr>
+                            <th>Symptom Frequency of occurrence</th>
+                            <th>percentage of total cases</th>
+                        </tr>
+                        <tr>
+                            <td>Fever</td>
+                            <td>87.9%</td>
+                        <tr>
+                            <td>Dry cough</td>
+                            <td>67.7%</td>
+                        </tr>
+                        <tr>
+                            <td>Fatigue</td>
+                            <td>38.1%</td>
+                        </tr>
+                        <tr>
+                            <td>Coughing up sputum</td>
+                            <td>33.4%</td>
+                        </tr>
+                        <tr>
+                            <td>Shallow breathing</td>
+                            <td> 18.6%</td>
+                        </tr>
+                        <tr>
+                            <td>Muscle or joint pain</td>
+                            <td>14.8%</td>
+                        </tr>
+                        <tr>
+                            <td>Sore throat</td>
+                            <td> 13.9%</td>
+                        </tr>
+                        <tr>
+                            <td>Headache</td>
+                            <td>13.6%</td>
+                        </tr>
+                        <tr>
+                            <td>Chills</td>
+                            <td>11.4%</td>
+                        </tr>
+                        <tr>
+                            <td>Nausea or vomiting</td>
+                            <td> 5%</td>
+                        </tr>
+                        <tr>
+                            <td>Stuffy nose</td>
+                            <td>4.8%</td>
+                        </tr>
+                        <tr>
+                            <td>Diarrhea</td>
+                            <td>3.7%</td>
+                        </tr>
+                        <tr>
+                            <td>Hemoptysis</td>
+                            <td> 0.9%</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>Conjunctival Congestion</td>
+                            <td> 0.8%</td>
+                        </tr>
+                    </table>
+                    <p>Iceland lab's testing suggests 50% of coronavirus cases have no symptoms.</p>
+                </div>
+            </div>           
+    </section>
+    <section id="protection">
+        <h2>How to protect yourself?</h2>
+            <div class='protect'>
+                <ul class='rules'>
+                    <li>Clean your hands often</li>
+                    <li>Avoid close contact</li>
+                    <li>Cover your mouth and nose<br> with a cloth face cover when around others</li>
+                    <li>Cover coughs and sneezes</li>
+                    <li>Clean and disinfect</li>
+                </ul>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1APwq1df6Mw" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+         </div>
+        
+    </section>
+    <section class='global-info' id='global-info'>
+            <h2>Global informations</h2>
+
+            <div class="chart-container-totalRecovered charts-containers">
+            
+                <canvas id="myChartCases"></canvas>
+            </div>
+            <p>Chart 1 - Covid-19 Confirmed cases on the World</p>
+
+            <div class="chart-container-deaths charts-containers">
+                <canvas id="myChartDeaths"></canvas>
+            </div>
+            <p>Chart 2 - Covid-19 Death cases on the World</p>
+            <div class="chart-container-deaths charts-containers">
+                <canvas id="myChartRecovered"></canvas>
+            </div>
+            <p>Chart 3 - Covid-19 Recovered cases on the World</p>
+           
+        </section>
+
+        <section class='poland-info' id='poland-info'>
+            <h2>Situation in Poland</h2>
+            <div class="chart-container-poland charts-containers">
+                <canvas id="myChartCasesPoland"></canvas>
+            </div>
+            <p>Chart 4 - Covid-19 Confirmed cases in Poland</p>
+            <div class="chart-container-poland charts-containers">
+            <canvas id="myChartDeathsPoland"></canvas>
+            </div>
+            <p>Chart 5 - Covid - 19 Death cases in Poland</p>
+            <div class="chart-container-poland charts-containers">
+                <canvas id="myChartRecoveredPoland"></canvas>
+            </div>
+            <p>Chart 6 - Covid -19 Recovered cases in Poland</p>
+            <div class="chart-container-poland charts-containers pie-chart">
+                <canvas id="myChartPiePoland"></canvas>
+            </div>
+            <p>Chart 7 - Covid-19 Compared statistics in Poland</p>
+            <p id='more-info'>for more info you can visit official site: <br><a href="">https://www.cdc.gov/coronavirus/2019-ncov/index.html</a></p>
+        </section>
+
+    </div>
+    <footer id='contact'>
+        <div class="form-content" >
+          <p>Posted by: Rafał Pych</p>
+          <p>
+            <a href="https://pl-pl.facebook.com/people/Rafa%C5%82-Pych/100003062517369"><i class="fab fa-facebook"></i></a>  &#8226;  <a href="https://www.instagram.com/p.rafaal/?hl=pl"><i class="fab fa-instagram"></i></a> &#8226; 	<a href="https://www.linkedin.com/in/rafa%C5%82-pych-06a0271a6/"><i class="fab fa-linkedin"></i></a>
+          </p>
+        </div>
+      </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

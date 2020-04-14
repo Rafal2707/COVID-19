@@ -1,0 +1,266 @@
+/* GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  font-weight: bolder;
+  font-size: 30px;
+  color: white;
+}
+
+h2 {
+  color: yellow;
+  border: 2px solid yellow;
+  width: 30%;
+  margin: 50px auto;
+}
+
+/* NAVIGATION */
+.container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), rgba(148, 48, 48, 0.2),
+    rgba(167, 67, 67, 0.4);
+  background-image: url("/img/corona-4983590_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navbar {
+  width: 300px;
+  height: 100%;
+  background-color: #262626;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20% 0 0 60%;
+  transition: right 0.8s;
+}
+
+.change {
+  right: 0;
+}
+.hamburger-menu {
+  width: 35px;
+  height: 30px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: yellow;
+  transition: all 0.8s;
+}
+
+.change .line-1 {
+  transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+.change .line-2 {
+  opacity: 0;
+}
+.change .line-3 {
+  transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+.nav-list {
+  text-align: right;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 25%;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 22px;
+  color: #eee;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 3px 0;
+}
+
+.nav-link::before,
+.nav-link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: yellow;
+  position: absolute;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.nav-link::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+.nav-link::before {
+  top: 0;
+  transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* END OF NAVIGATION */
+
+/* HEADER */
+header {
+  color: white;
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+}
+
+header h2 {
+  width: 40%;
+}
+.find-country {
+  text-align: center;
+  padding: 70px;
+  margin-top: 50px;
+}
+
+.container-counter {
+  color: yellow;
+  text-align: center;
+  display: flex;
+  padding: 30px;
+}
+.container-inner {
+  flex-basis: 33%;
+  font-size: 30px;
+}
+
+input {
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: yellow;
+}
+
+/* END OF HEADER */
+
+/* INTRO */
+.table-container {
+  display: flex;
+  padding: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.table-container h2 {
+  width: 100%;
+  padding: 40px;
+}
+
+.table-container p {
+  text-align: left;
+  margin-left: 40px;
+  width: 40%;
+}
+table {
+  font-size: 20px;
+  background-color: white;
+  border-radius: 4px;
+  width: 50%;
+  border: 2px solid yellow;
+}
+
+th,
+td {
+  border: 1px solid black;
+}
+.intro {
+  text-align: center;
+}
+.intro-p {
+  display: flex;
+  padding: 80px 150px;
+  margin: auto;
+  text-align: justify;
+}
+
+/* HOW TO PROTECT YOURSELF */
+
+.protect {
+  display: flex;
+  flex-wrap: wrap;
+}
+.rules {
+  width: 50%;
+  text-decoration: underline yellow;
+  color: white;
+}
+
+iframe {
+  border-radius: 20px;
+}
+
+/* CHARTS */
+.charts-containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  background-color: white;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+.pie-chart {
+  background-color: white;
+}
+
+/* Footer */
+a {
+  color: aqua;
+}
+#more-info{
+  padding: 100px;
+}
+footer {
+  display: flex;
+  background-color: #262626;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+}
