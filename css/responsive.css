@@ -1,0 +1,79 @@
+@media all  and (max-width: 1024px) {
+    .protect{
+        justify-content: center;
+    }
+    .rules{
+        text-align: left;
+    }
+}
+
+
+
+@media all  and (max-width: 768px) {
+    .intro-p{
+        padding: 30px;
+    }
+
+    h2{
+        width: 100%;
+    }
+
+    .rules{
+        width: 100%;
+        margin: 10px;
+    }
+
+
+
+}
+
+
+
+@media all  and (max-width: 468px) {
+    
+    header{
+        font-size: x-large;
+        padding-top: 50px 0;
+    }
+
+    header h2{
+        width: 100%;
+    }
+    input{
+        width: 80%;
+    }
+
+    .find-country{
+        padding: 10px;
+    }
+    .container-counter{
+        flex-wrap: wrap;
+    }
+    .container-inner {
+        flex-basis: 100%;
+    }
+    .intro-p{
+        padding: 10px;
+    }
+
+    table{
+        width: 100%;
+    }
+    .table-container{
+        padding: 10px;
+    }
+    .table-container p{
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+    }
+
+    .charts-containers{
+        width: 100%;
+    }
+
+
+    #more-info {
+        padding: 10px;
+    }
+}

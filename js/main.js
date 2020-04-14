@@ -101,7 +101,7 @@ fetch('https://api.covid19api.com/summary')
       data: {
         labels: labelConfirmed,
         datasets: [{
-          label: 'COVID-19 Total confirmed cases on World',
+          label: 'COVID-19 Total confirmed cases on the World',
           backgroundColor: 'yellow',
           borderColor: '',
           data: dataConfirmed
@@ -135,7 +135,7 @@ fetch('https://api.covid19api.com/summary')
       data: {
         labels: labelDeaths,
         datasets: [{
-          label: 'COVID-19 Deaths on World',
+          label: 'COVID-19 Deaths on the World',
           backgroundColor: 'rgb(255, 99, 132)',
           borderColor: 'rgb(255, 99, 132)',
           data: dataDeaths
