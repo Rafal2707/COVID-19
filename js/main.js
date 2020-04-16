@@ -22,20 +22,28 @@ fetch('https://api.covid19api.com/summary')
     let nameInput = document.getElementById('input-value');
     document.querySelector('form.find-country').addEventListener('submit', function (e) {
       e.preventDefault();
-      console.log(nameInput.value)
-      if (nameInput.value !== countries[0].Country) {
-        console.log('wrong')
-      }
+      let addExample = document.getElementById('example');
+      addText = document.createElement('p')
+      let CountryName = '';
+      let OneCountryData = [];
+      addText.add
+      addExample.innerHTML = CountryName
+      addExample.appendChild(addText)
+      for(i in countries){
+        if (nameInput.value.toUpperCase() === countries[i].Country.toUpperCase()) {
+          OneCountryData.push("Country : " + countries[i].Country + '</br>')
+          OneCountryData.push('New confirmed cases : ' + countries[i].NewConfirmed + '</br>')
+          OneCountryData.push('Total confirmed cases : ' + countries[i].TotalConfirmed + '</br>')
+          OneCountryData.push('New Deaths : ' + countries[i].NewDeaths + '</br>')
+          OneCountryData.push('Total Deaths : ' + countries[i].TotalDeaths + '</br>')
+          OneCountryData.push("New recovered cases : " + countries[i].NewRecovered + '</br>')
+          OneCountryData.push("Total recovered cases : " + countries[i].TotalRecovered + '</br>')
+          addText.innerHTML = OneCountryData.join("");
+        }
+        
 
+      }
     })
-    /*       function getCountrybyName(nameInput){
-            return countries.filter(
-              function(countries){ return countries.Country === nameInput.value}
-              
-              
-              )} 
-          let find = getCountrybyName(nameInput.value)
-          console.log(find) */
 
 
 
