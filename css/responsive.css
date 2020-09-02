@@ -26,10 +26,14 @@
     .intro-p p{
         font-size:20px;
     }
-/*     .container {
-        background-attachment: scroll;
-        padding: 254px 0px !important;
-    } */
+
+    .header h2{
+        width: 75%;
+    }
+
+    .container {
+        background-size: 300%;
+    }
 
 
 
