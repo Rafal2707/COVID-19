@@ -23,10 +23,10 @@ fetch('https://api.covid19api.com/summary')
     document.querySelector('form.find-country').addEventListener('submit', function (e) {
       e.preventDefault();
       let addExample = document.getElementById('example');
-      addText = document.createElement('p')
+      addText = document.createElement('p');
       let CountryName = '';
       let OneCountryData = [];
-      addText.add
+      addText.add;
       addExample.innerHTML = CountryName
       addExample.appendChild(addText)
       for(i in countries){
@@ -272,7 +272,7 @@ fetch('https://api.covid19api.com/dayone/country/poland')
           label: 'COVID-19 all statistics in Poland',
           backgroundColor: ['green', 'red', 'yellow'],
           borderColor: '',
-          data: [recoveredPoland[recoveredPoland.length - 1], deathsPoland[deathsPoland.length - 1], casesPoland[casesPoland.length - 1]]
+          data: [recoveredPoland[recoveredPoland.length - 2], deathsPoland[deathsPoland.length - 2], casesPoland[casesPoland.length - 2]]
         }]
       }
     };

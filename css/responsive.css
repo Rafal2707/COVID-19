@@ -5,23 +5,31 @@
     .rules{
         text-align: left;
     }
+    .intro-p{
+        padding: 100px;
+    }
 }
 
 
 
 @media all  and (max-width: 768px) {
-    .intro-p{
-        padding: 30px;
-    }
 
     h2{
-        width: 100%;
+        width: 70%;
     }
 
     .rules{
         width: 100%;
         margin: 10px;
     }
+
+    .intro-p p{
+        font-size:20px;
+    }
+/*     .container {
+        background-attachment: scroll;
+        padding: 254px 0px !important;
+    } */
 
 
 
@@ -54,6 +62,9 @@
     }
     .intro-p{
         padding: 10px;
+    }
+    #protection h2{
+        width: 80%;
     }
 
     table{
